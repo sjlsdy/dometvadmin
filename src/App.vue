@@ -1,13 +1,6 @@
 <template>
 	<div id="app">
-		<div class="content">
-			<div class="main-content">
-				<router-view></router-view>
-			</div>
-		</div>
-		<div class="left">
-			导航
-		</div>
+		<router-view style="width: 100%; height: 100%;"></router-view>
 	</div>
 </template>
 
@@ -28,10 +21,12 @@
 		width: 100%;
 		height: 100%;
 	}
+	
 	#app {
 		width: 100%;
 		height: 100%;
 	}
+	
 	.left {
 		float: left;
 		width: 200px;
