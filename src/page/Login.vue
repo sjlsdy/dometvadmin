@@ -39,6 +39,10 @@
 						})
 						.then(function(response) {
 							if(response.data.code == 0) {
+								localStorage.user=JSON.stringify(response.data);
+								console.log("=====")
+								console.log(JSON.parse(localStorage.user))
+								console.log("=====")
 								_self.$message(response.data.msg);
 								_self.$router.push('main/silder')
 							} else {
